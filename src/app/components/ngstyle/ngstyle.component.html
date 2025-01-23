@@ -1,0 +1,28 @@
+<div class="row">
+  <div
+    class="col-3 p-4 border border-primary"
+    [ngStyle]="{ 'background-color': divOneColor, color: textColor }"
+  >
+    div-1
+  </div>
+  <div
+    class="col-3 p-4 border border-secondary"
+    [ngStyle]="{ 'background-color': divTwoColor }"
+  >
+    div-2
+  </div>
+  <div class="col-3 p-4 border border-warning">div-3</div>
+  <div class="col-3 p-4 border border-info">div-4</div>
+</div>
+<div class="row border">
+  <div class="col-3 p-4">
+    <button class="btn btn-success m-2" (click)="setDivOneColor('green')">
+      Green
+    </button>
+    <button class="btn btn-danger m-2" (click)="setDivTwoColor('red')">
+      Red
+    </button>
+    <button class="btn btn-warning m-2">Orange</button>
+    <button class="btn btn-info m-2">Bluish</button>
+  </div>
+</div>
